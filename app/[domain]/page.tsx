@@ -116,6 +116,9 @@ export default async function IndexPage({
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
           Follow the instructions below to get your own {domain} handle
         </p>
+        <div className="mt-2 text-sm text-muted-foreground">
+          Brought to you by <a href="https://urbanism.plus" className="font-medium underline hover:text-primary">Urbanism+</a>
+        </div>
         <div className="mt-4 rounded-lg border bg-muted/50 p-4">
           <p className="text-sm font-medium mb-2">🚴 Other communities:</p>
           <div className="flex gap-3 flex-wrap">
@@ -224,6 +227,21 @@ export default async function IndexPage({
             .
           </p>
         </Stage>
+      </div>
+      <div className="mt-8 rounded-lg border bg-muted/50 p-6">
+        <h3 className="font-semibold mb-2">💚 Support Community Handles</h3>
+        <p className="text-sm text-muted-foreground mb-3">
+          These domains cost money to maintain. We're raising $125 to cover next year's costs. 
+          Any extra funds go towards more community handles and urbanism projects.
+        </p>
+        <a 
+          href="https://ko-fi.com/urbanismplus/goal?g=0" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:bg-primary/90"
+        >
+          Support on Ko-fi
+        </a>
       </div>
     </main>
   )
