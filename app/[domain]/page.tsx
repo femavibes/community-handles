@@ -119,19 +119,17 @@ export default async function IndexPage({
         <div className="mt-2 text-sm text-muted-foreground">
           Brought to you by <a href="https://urbanism.plus" className="font-medium underline hover:text-primary">Urbanism+</a>
         </div>
-        <div className="mt-4 rounded-lg border bg-muted/50 p-4">
-          <p className="text-sm font-medium mb-2">🚴 Other communities:</p>
-          <div className="flex gap-3 flex-wrap">
-            {domain !== "bancars.city" && (
-              <a href="https://bancars.city" className="text-sm font-medium underline hover:text-primary">bancars.city</a>
-            )}
-            {domain !== "carfree.life" && (
-              <a href="https://carfree.life" className="text-sm font-medium underline hover:text-primary">carfree.life</a>
-            )}
-            {domain !== "on.bike" && (
-              <a href="https://on.bike" className="text-sm font-medium underline hover:text-primary">on.bike</a>
-            )}
-          </div>
+        <div className="mt-4 flex gap-2 text-sm">
+          <span className="text-muted-foreground">Other communities:</span>
+          {domain !== "bancars.city" && (
+            <a href="https://bancars.city" className="font-medium hover:underline">bancars.city</a>
+          )}
+          {domain !== "carfree.life" && (
+            <a href="https://carfree.life" className="font-medium hover:underline">carfree.life</a>
+          )}
+          {domain !== "on.bike" && (
+            <a href="https://on.bike" className="font-medium hover:underline">on.bike</a>
+          )}
         </div>
       </div>
       <div>
