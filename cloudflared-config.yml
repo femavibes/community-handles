@@ -1,0 +1,7 @@
+tunnel: <YOUR_TUNNEL_ID>
+credentials-file: /root/.cloudflared/<YOUR_TUNNEL_ID>.json
+
+ingress:
+  - hostname: db.bancars.city
+    service: tcp://localhost:5434
+  - service: http_status:404

@@ -121,7 +121,7 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       prisma:
-        specifier: ^5.18.0
+        specifier: 5.18.0
         version: 5.18.0
       tailwindcss:
         specifier: ^3.4.9
