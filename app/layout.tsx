@@ -30,6 +30,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
+        <head>
+          <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+        </head>
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
@@ -42,6 +45,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </div>
             <TailwindIndicator />
           </ThemeProvider>
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              kofiWidgetOverlay.draw('urbanismplus', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Support',
+                'floating-chat.donateButton.background-color': '#00b9fe',
+                'floating-chat.donateButton.text-color': '#fff'
+              });
+            `
+          }} />
         </body>
       </html>
     </>

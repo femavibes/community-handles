@@ -116,11 +116,11 @@ export default async function IndexPage({
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
           Follow the instructions below to get your own {domain} handle
         </p>
-        <div className="mt-2 text-sm text-muted-foreground">
-          Brought to you by <a href="https://urbanism.plus" className="font-medium underline hover:text-primary">Urbanism+</a>
+        <div className="mt-2 text-base">
+          Brought to you by <a href="https://bsky.app/profile/urbanism.plus" target="_blank" rel="noopener noreferrer" className="font-bold text-lg underline hover:text-primary">Urbanism+</a>
         </div>
         <div className="mt-4 flex gap-2 text-sm">
-          <span className="text-muted-foreground">Other communities:</span>
+          <span className="text-muted-foreground">More free handles:</span>
           {domain !== "bancars.city" && (
             <a href="https://bancars.city" className="font-medium hover:underline">bancars.city</a>
           )}
@@ -232,6 +232,15 @@ export default async function IndexPage({
           These domains cost money to maintain. We&apos;re raising $125 to cover next year&apos;s costs. 
           Any extra funds go towards more community handles and urbanism projects.
         </p>
+        <div className="mb-4">
+          <div className="flex justify-between text-sm mb-1">
+            <span className="text-muted-foreground">Progress</span>
+            <span className="font-medium">$0 / $125</span>
+          </div>
+          <div className="w-full bg-muted rounded-full h-2">
+            <div className="bg-primary h-2 rounded-full" style={{width: '0%'}}></div>
+          </div>
+        </div>
         <a 
           href="https://ko-fi.com/urbanismplus/goal?g=0" 
           target="_blank" 
