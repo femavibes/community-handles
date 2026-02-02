@@ -229,7 +229,7 @@ export default async function IndexPage({
       <div className="mt-8 rounded-lg border bg-muted/50 p-6">
         <h3 className="font-semibold mb-2">💚 Support Community Handles</h3>
         <p className="text-sm text-muted-foreground mb-3">
-          These domains cost money to maintain. We're raising $125 to cover next year's costs. 
+          These domains cost money to maintain. We&apos;re raising $125 to cover next year&apos;s costs. 
           Any extra funds go towards more community handles and urbanism projects.
         </p>
         <a 
