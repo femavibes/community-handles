@@ -211,6 +211,20 @@ export default async function IndexPage({
           </p>
         </Stage>
       </div>
+      <div className="mt-8 border-t pt-6">
+        <p className="text-sm text-muted-foreground mb-3">Other communities:</p>
+        <div className="flex gap-3 flex-wrap">
+          {domain !== "bancars.city" && (
+            <a href="https://bancars.city" className="text-sm underline hover:text-primary">bancars.city</a>
+          )}
+          {domain !== "carfree.life" && (
+            <a href="https://carfree.life" className="text-sm underline hover:text-primary">carfree.life</a>
+          )}
+          {domain !== "on.bike" && (
+            <a href="https://on.bike" className="text-sm underline hover:text-primary">on.bike</a>
+          )}
+        </div>
+      </div>
     </main>
   )
 }
