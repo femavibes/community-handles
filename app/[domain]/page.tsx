@@ -116,6 +116,20 @@ export default async function IndexPage({
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
           Follow the instructions below to get your own {domain} handle
         </p>
+        <div className="mt-4 rounded-lg border bg-muted/50 p-4">
+          <p className="text-sm font-medium mb-2">🚴 Other communities:</p>
+          <div className="flex gap-3 flex-wrap">
+            {domain !== "bancars.city" && (
+              <a href="https://bancars.city" className="text-sm font-medium underline hover:text-primary">bancars.city</a>
+            )}
+            {domain !== "carfree.life" && (
+              <a href="https://carfree.life" className="text-sm font-medium underline hover:text-primary">carfree.life</a>
+            )}
+            {domain !== "on.bike" && (
+              <a href="https://on.bike" className="text-sm font-medium underline hover:text-primary">on.bike</a>
+            )}
+          </div>
+        </div>
       </div>
       <div>
         <Stage title="Enter your current handle" number={1}>
@@ -210,20 +224,6 @@ export default async function IndexPage({
             .
           </p>
         </Stage>
-      </div>
-      <div className="mt-8 border-t pt-6">
-        <p className="text-sm text-muted-foreground mb-3">Other communities:</p>
-        <div className="flex gap-3 flex-wrap">
-          {domain !== "bancars.city" && (
-            <a href="https://bancars.city" className="text-sm underline hover:text-primary">bancars.city</a>
-          )}
-          {domain !== "carfree.life" && (
-            <a href="https://carfree.life" className="text-sm underline hover:text-primary">carfree.life</a>
-          )}
-          {domain !== "on.bike" && (
-            <a href="https://on.bike" className="text-sm underline hover:text-primary">on.bike</a>
-          )}
-        </div>
       </div>
     </main>
   )
